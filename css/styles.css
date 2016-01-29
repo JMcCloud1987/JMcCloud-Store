@@ -1,0 +1,233 @@
+body { 
+	background-color: #350202;
+	background-image: url("_images/1-slideshow/background.jpg"); 
+	font-family: 'Fjalla One', sans-serif;
+}
+h1{	font-family: 'Fjalla One', sans-serif;
+	font-size: 16px;
+	margin-left: 430px;
+	color: #000000;
+}
+title {font-family: 'Abel',sans-serif;
+	   font-size: 16px;
+	   margin-left: 100px;
+	   color: #000000;
+
+	}
+body.subpage { background-color: #408080;
+ }
+ p {font-size: 10px; }
+ #sect5 img { font-size: 10px;}
+ #sect5 li { font-size: 10px;}
+ 
+
+#sect2 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+#sect3 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+#sect4 {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+#container {
+	background-color: #FFFFFF;
+	
+	padding: 25px;
+	border:solid 10px #000000;
+	margin:25px auto;
+	margin-top: 20px;
+
+	height:530px;
+	min-width: 520px;
+}
+#container img { 
+	max-width: 50%;
+
+
+
+}
+
+#sect1 h1{color: #FF0000}
+#mainmenu { text-align: center; margin-bottom: 15px; }
+#mainmenu a {
+	display: inline-block;
+	width: 115px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #F1E71F
+;	color: #000000;
+	text-decoration: none;
+}
+#mainmenu a:hover {
+	background-color: #FFFFC1;
+}
+#mainmenu a.selected {
+	background-color: #FF0000;
+}
+
+#theTarget {
+	padding: 30px;
+	min-height: 530px;
+}
+#sect2 img{max-width: 5%;}
+
+/*-------------------------
+| Slideshow
+--------------------------*/
+#slideshow {
+	
+				width: 200px;
+				height: 50px;
+				position: relative;
+				margin:auto;
+			}
+#slideshow img {
+		float: center;
+				position: absolute;
+				margin-left:145px;
+				margin-right: 25px;
+				-moz-border-radius:6px; 
+
+			-webkit-border-radius:6px; 
+
+			border-radius:6px;
+
+			border:1px solid #e0e0e0;
+
+			box-shadow: 0px 0px 7px #958365;
+
+			-webkit-box-shadow: 0px 0px 7px #e6e6e6;
+
+			-moz-box-shadow: 0px 0px 7px #e6e6e6;
+		
+				
+			}
+			
+
+/*-------------------------
+| Lightbox
+--------------------------*/
+#lightbox {
+	
+	padding: 25px;
+	text-align: center;
+	width: 600px;
+	margin: auto;
+}
+#lightbox .images img {
+	width: 150px;
+	height: auto;
+
+}
+#lightbox .light, #lightbox .dark {
+	display: none;
+	position: fixed;
+	left:0px; top: 0px; bottom: 0px; right: 0px;
+
+	margin: auto;
+
+}
+#lightbox .light {
+	background-color: #000000;
+	width: 600px; height: 350px;
+	text-align: center;
+	padding: 15px;
+	border: solid 8px #FFFFFF;
+}
+#lightbox .dark {
+	background-color: #000;
+	opacity: .7;
+}
+#lightbox .light img {
+	display: block;
+	margin-left:145px;
+
+		
+}
+
+
+
+
+/*-------------------------
+| Tabbed
+--------------------------*/
+#tabbed {
+	font-family: 'Abel',sans-serif;
+	padding: 25px;
+	width: 500px;
+	height: 140px;
+	margin: auto;
+}
+#tabbed nav.tab-links a {
+	display: inline-block;
+	background-color: #FFFFFF;
+	color: #000000;
+	width: 100px;
+	height: 60px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+#tabbed nav.tab-links a:hover { background-color: #731e24; }
+#tabbed nav.tab-links a.chosen { background-color: #000040; }
+
+#tabbed section.tab {
+	background-color: #FFFFFF;
+	
+	margin-bottom: 15px;
+	margin-left: -190px;
+	width:950px;
+	height: 350px;
+}
+
+#tabbed section.tab img {
+	float: center;
+	margin-left:400px;
+	
+}
+#tabbed section.tab h1 { margin: 0px; font-size: 50px; color: #ab2e37; }
+/*-------------------------------------
+| Responsive
+-------------------------------------*/
+body{ background-color: #350202;}
+#main article {}
+
+@media screen and (min-width:300px){
+body{}
+#main article {max-width: 100%%;font-size: 10px; }
+#main aside {max-width: 100%%; font-size: 10px;  }
+#container {max-width: 100%;}
+#container img{ 
+		position:static;}
+
+
+
+@media screen and (min-width:960px){
+body{background-color:#2A4464;}
+#main article {max-width: 100%;font-size: 12px; }
+#main aside {max-width: 100%; font-size: 12px; }
+#container {max-width: 100%;}
+#container img{
+		position:static;}
+
+@media screen and (min-width:1200px){
+body{}
+#main article {max-width: 300%;font-size: 14px; }
+#main aside {max-width: 300%; font-size: 14px; }
+#container {max-width: 100%;}
+#container img{
+		position:static;}
+
+
+/*Clearfix Hack :: cf + tab*/
+.cf:before, .cf:after {content: " "; display: table;}
+.cf:after {clear: both;}
+.cf { *zoom:1;}
