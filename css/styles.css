@@ -16,7 +16,7 @@ title {font-family: 'Abel',sans-serif;
 	}
 body.subpage { background-color: #408080;
  }
- p {font-size: 10px; }
+ p {font-size: 10px; float: left;}
  #sect5 img { font-size: 10px;}
  #sect5 li { font-size: 10px;}
  .inset {

@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 $('.slideshow').click(function() {
 //load default
-$('#theTarget').load(' index.html #theTarget #slideshow .cf', slideshow_apply);
+$('#theTarget').load('#slideshow ', slideshow_apply);
 /*-------------------------------------
 | Pinned Navigation
 -------------------------------------*/
@@ -148,29 +148,10 @@ function hamburger_toggle() {
 | 1. Slideshow
 --------------------------*/
 //slideshow------------------------------------------
-$('.slideshow').click(function() {
-
-	// ajax load 
-	$('#theTarget').load('index.html #theTarget #slideshow', slideshow_apply);
-});
-$(document).ready(slideshow_apply);
-
-function slideshow_apply(){
-var slideshow = $('#slideshow');
-
-function slideshow_fade() {
-	lastimg = slideshow.find('img:last');
-
-	lastimg.delay(2000).animate({'opacity':'1'},1000, function(){
-	lastimg.prependTo(slideshow).css({'opacity':'1'});
-	slideshow_fade();
-					});
-				}
-
-	slideshow_fade();
-			}
 
 
+
+/*-------------------------
 
 
 
