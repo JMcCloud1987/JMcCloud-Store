@@ -1,10 +1,10 @@
 body { 
-	background-color: #350202;
-	background-image: url("_images/1-slideshow/background.jpg"); 
+	
 	font-family: 'Fjalla One', sans-serif;
 }
+
 h1{	font-family: 'Fjalla One', sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 	margin-left: 430px;
 	color: #000000;
 }
@@ -16,10 +16,28 @@ title {font-family: 'Abel',sans-serif;
 	}
 body.subpage { background-color: #408080;
  }
- p {font-size: 10px; }
+ p {font-size: 10px; float: left;}
  #sect5 img { font-size: 10px;}
  #sect5 li { font-size: 10px;}
- 
+ .inset {
+	;
+	width: 90%;
+	min-width: 120px; 
+	max-width: 1000px;
+	max-height: 150px;
+	/*padding: 10px; */
+	margin: auto;
+	color: #333;
+}
+
+header 	{ background-color: #000000; padding: 10px; height: 135px;}
+nav 	{ background-color: #991F1F; padding: 10px; }
+#main 	{  padding: 10px; }
+footer 	{ padding: 10px; margin-top: 200px;}
+h1{font-family: 'Oswald', sans-serif; color: #FFFFFF; font-size: 30px; margin-left: 15px;}
+header img {height: 135px; max-width: 50%; float: left; margin-left: -60px;}
+header aside img {height: 135px;max-width: 30%; float: left;}
+
 
 #sect2 {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
@@ -36,23 +54,26 @@ body.subpage { background-color: #408080;
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
 }
+#sect5{height:100px;
+	margin-left: -400px;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+	}
+
 #container {
 	background-color: #FFFFFF;
-	
+	border:solid 5px black;
 	padding: 25px;
-	border:solid 10px #000000;
+	
 	margin:25px auto;
 	margin-top: 20px;
 
-	height:530px;
-	min-width: 520px;
+	height:680px;
+	width:1200px;
 }
-#container img { 
-	max-width: 50%;
 
-
-
-}
 
 #sect1 h1{color: #FF0000}
 #mainmenu { text-align: center; margin-bottom: 15px; }
@@ -73,44 +94,118 @@ body.subpage { background-color: #408080;
 	background-color: #FF0000;
 }
 
+
 #theTarget {
-	padding: 30px;
-	min-height: 530px;
+	padding: 10px;
+	min-height: 580px;
 }
 #sect2 img{max-width: 5%;}
+/*-------------------------------------
+| Responsive Images
+-------------------------------------*/
+img { width: 100%; }
+#sect3 img {width:25%;margin-left: 420px;}
+
+
+/*-------------------------------------
+/*-------------------------------------
+| header and footer
+-------------------------------------*/
+header .inset {
+	line-height: 200px;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+}
+footer .inset {
+	line-height: 100px;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+}
+/*-------------------------------------
+| hamburger
+-------------------------------------*/
+nav#mainmenu .glyphicon-menu-hamburger { 
+	color: #E49191;
+	font-size: 40px;
+	padding: 5px;
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+}
+nav#mainmenu .menu  { display: none; }
+
+@media screen and (min-width:800px) {
+	nav#mainmenu .glyphicon-menu-hamburger {  display: none; }
+	nav#mainmenu .menu  { display: block; }
+}
+/*-------------------------------------
+| Pinned Navigation
+-------------------------------------*/
+.pinned nav#mainmenu {
+	position: fixed;
+	left: 0px; 
+	right: 0px; 
+	top: 0px; 
+
+	z-index: 9000;
+}
+/*hold the space for the nav once its positioned. */
+.pinned header { margin-bottom: 70px; }
+
+/*-------------------------------------
+| Main
+-------------------------------------*/
+#main section {
+	min-height: 250px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+#main section:nth-of-type(even) { background-color: #FFFFFF }
+
+/*-------------------------------------
+| nav
+-------------------------------------*/
+nav#mainmenu { text-align: center;
+				font-family: 'Oswald', sans-serif;
+				color: #FFFFFF;
+				font-size: 12px;
+ }
+nav#mainmenu a {
+	display: inline-block;
+	width: 95px; 
+	line-height: 30px; 
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+nav#mainmenu a:hover { background-color: #6ABE86; color: #fff; text-decoration: none;font-family: 'Oswald', sans-serif; }
+nav#mainmenu a.chosen { background-color: #73AD56;  color: #000; font-family: 'Oswald', sans-serif;}
 
 /*-------------------------
 | Slideshow
 --------------------------*/
 #slideshow {
-	
-				width: 200px;
-				height: 50px;
+				border:solid 10px #ab2e37;
+				width: 400px;
+				height: 180px;
 				position: relative;
 				margin:auto;
+				margin-left: -10px;
 			}
-#slideshow img {
-		float: center;
-				position: absolute;
-				margin-left:145px;
-				margin-right: 25px;
-				-moz-border-radius:6px; 
-
-			-webkit-border-radius:6px; 
-
-			border-radius:6px;
-
-			border:1px solid #e0e0e0;
-
-			box-shadow: 0px 0px 7px #958365;
-
-			-webkit-box-shadow: 0px 0px 7px #e6e6e6;
-
-			-moz-box-shadow: 0px 0px 7px #e6e6e6;
-		
+#slideshow img {float: center;
+				display: inline-block;
 				
-			}
+				position: absolute;
+
 			
+		
+			}
+
+
+
 
 /*-------------------------
 | Lightbox
@@ -122,7 +217,6 @@ body.subpage { background-color: #408080;
 	width: 600px;
 	margin: auto;
 }
-#lightbox .images img {
 	width: 150px;
 	height: auto;
 
