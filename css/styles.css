@@ -1,0 +1,137 @@
+
+body { background-color:#FFFFFF; color: #eee; }
+
+#container {
+	background-color: #EEEEEE; 
+}
+.inset {
+	;
+	width: 90%;
+	min-width: 320px; 
+	max-width: 1200px;
+	/*padding: 10px; */
+	margin: auto;
+	color: #333;
+}
+
+header 	{ background-color: #000000; padding: 10px; }
+nav 	{ background-color: #991F1F; padding: 10px; }
+#main 	{ background-color: #FFFFFF#FFFFFF; padding: 10px; }
+footer 	{ background-color: #000000; padding: 10px; }
+h1{font-family: 'Oswald', sans-serif; color: black; font-size: 30px; margin-left: 15px;}
+p{ color: black;}
+/*-------------------------------------
+| header and footer
+-------------------------------------*/
+header .inset {
+	width: 50%;
+	line-height: 200px;
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+}
+footer .inset {
+	line-height: 100px;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+}
+/*-------------------------------------
+| nav
+-------------------------------------*/
+nav#mainmenu { text-align: center;
+				font-family: 'Oswald', sans-serif;
+				color: #FFFFFF;
+ }
+nav#mainmenu a {
+	display: inline-block;
+	width: 95px; 
+	line-height: 40px; 
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+nav#mainmenu a:hover { background-color: #6ABE86; color: #fff; text-decoration: none;font-family: 'Oswald', sans-serif; }
+nav#mainmenu a.chosen { background-color: #73AD56;  color: #000; font-family: 'Oswald', sans-serif;}
+
+/*-------------------------------------
+| hamburger
+-------------------------------------*/
+nav#mainmenu .glyphicon-menu-hamburger { 
+	color: #E49191;
+	font-size: 40px;
+	padding: 5px;
+	font-family: 'Oswald', sans-serif;
+	color: #FFFFFF;
+}
+nav#mainmenu .menu  { display: none; }
+
+@media screen and (min-width:800px) {
+	nav#mainmenu .glyphicon-menu-hamburger {  display: none; }
+	nav#mainmenu .menu  { display: block; }
+}
+
+/*-------------------------------------
+| Pinned Navigation
+-------------------------------------*/
+.pinned nav#mainmenu {
+	position: fixed;
+	left: 0px; 
+	right: 0px; 
+	top: 0px; 
+
+	z-index: 9000;
+}
+/*hold the space for the nav once its positioned. */
+.pinned header { margin-bottom: 70px; }
+
+/*-------------------------------------
+| Main
+-------------------------------------*/
+#main section {
+	min-height: 350px;
+	overflow: hidden;
+	background-color: #000000;
+}
+#main section:nth-of-type(even) { background-color: #000000; }
+
+/*-------------------------------------
+| 12 Column Grid
+-------------------------------------*/
+.row > div {
+	border: solid 1px #000000;
+	background-color: #FFFFFF;
+	min-height: 100px;
+	padding-top: 10px;
+}
+
+
+/*-------------------------------------
+| Responsive Images
+-------------------------------------*/
+img { width: 100%; }
+#sect3 img {width:25%;margin-left: 420px;}
+
+
+#container img{}
+/*-------------------------------------
+| Aside
+-------------------------------------*/
+#main aside 	{padding: 20px; background-color: #FFFFFF; border: solid black 5px; }
+#main aside 	{width:60%; float:left; margin: auto;margin-left: 200px;}
+/*-------------------------------------
+| Clearfix
+| http://nicolasgallagher.com/micro-clearfix-hack/
+-------------------------------------*/
+.cf:before,.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*-------------------------------------
+video
+-------------------------------------*/
+
+
+#sect5 video{margin-left: 200px; width: 50%;}
