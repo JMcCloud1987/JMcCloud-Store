@@ -1,13 +1,26 @@
 $(document).ready(function(){
 
+<<<<<<< HEAD
+=======
+$('.slideshow').click(function() {
+//load default
+$('#theTarget').load('#slideshow ', slideshow_apply);
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 /*-------------------------------------
 | Pinned Navigation
 -------------------------------------*/
 var pin_state = 'scroll';
 
 var nav_height = 70;
+<<<<<<< HEAD
 var main_offset = $('#main').offset().top;
 var nav_offset = main_offset - nav_height;
+=======
+
+var body_offset = $('#main').offset();
+
+var nav_offset =body_offset - nav_height;
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 
 
 function pinned_nav() {
@@ -37,11 +50,19 @@ $(window).scroll(pinned_nav);
 | Chosen One State
 -------------------------------------*/
 function chosen_one() {
+<<<<<<< HEAD
 	var sect1_top = $('#sect1').offset().top - nav_height;
 	var sect2_top = $('#sect2').offset().top - nav_height;
 	var sect3_top = $('#sect3').offset().top - nav_height;
 	var sect4_top = $('#sect4').offset().top - nav_height;
 	var sect5_top = $('#sect5').offset().top - nav_height;
+=======
+	var sect1_top = $('#sect1').offset() - nav_height;
+	var sect2_top = $('#sect2').offset() - nav_height;
+	var sect3_top = $('#sect3').offset() - nav_height;
+	var sect4_top = $('#sect4').offset() - nav_height;
+	var sect5_top = $('#sect5').offset() - nav_height;
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 
 	// how far scrolled from top
 	var howFar = $(window).scrollTop();
@@ -85,7 +106,11 @@ function animate_scroll(event) {
 	var whichSect = $(this).attr('href');
 
 	// get offset of our destination
+<<<<<<< HEAD
 	var scroll_destination = $(whichSect).offset().top - nav_height;
+=======
+	var scroll_destination = $(whichSect).offset() - nav_height;
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 
 	// scroll window. have to use html and body for widest browser reach
 	$('html, body').animate({scrollTop : scroll_destination}, 1000);
@@ -118,7 +143,11 @@ function menu_manage() {
 		$('nav#mainmenu .menu').hide();
 	}
 
+<<<<<<< HEAD
 	console.log(menu_state);
+=======
+	{console.log(menu_state);
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 }
 
 menu_manage();
@@ -137,6 +166,7 @@ function hamburger_toggle() {
 	else
 	{
 		menu_state = 'hidden';
+<<<<<<< HEAD
 		$('nav#mainmenu .menu').hide();
 	}
 }
@@ -147,6 +177,31 @@ $('nav#mainmenu .glyphicon-menu-hamburger').click(hamburger_toggle);
 }); /*here ends doc ready*/
 
 
+=======
+		$('nav#mainmenu .menu').hide();}
+
+/*-------------------------
+| 1. Slideshow
+--------------------------*/
+//slideshow------------------------------------------
+
+
+
+/*-------------------------
+
+
+
+
+				
+
+			
+					
+				
+	
+
+				
+			
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 
 
 

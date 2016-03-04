@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 	<head>
+<<<<<<< HEAD
 		<title>Bootstrap Website</title>
 		<!-- CSS GOES HERE -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,20 +15,61 @@
 					<img src="img/header.png">
 				</div>
 			</header>
+=======
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta charset="utf-8">
+		<title>Bootstrap Website</title>
+		<!-- CSS GOES HERE -->
+		<link rel="stylesheet" href="js/bootstrap.min.js">
+		<link rel="stylesheet" href="css/styles.css">
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<div id="container">
+		<header>
+				<div class="inset">
+				<div class="cf:after">
+				<article>
+					<img src="img/header.png" hspace="60" >
+					</article>
+				</div>
+				<div>
+				<aside>
+				<img src="img/sale.png" height="" width="" hspace="3" >
+				</aside>
+				</div>
+				<div>
+				<aside>
+				<img src="img/slogan.png" hspace="15" >
+				</aside>
+				</div>
+			</header>
+	</head>
+	<body>
+		
+			
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 			<nav id="mainmenu">
 				<div class="inset">
 
 					<div class="glyphicon glyphicon-menu-hamburger"></div>
 
 					<div class="menu">
+<<<<<<< HEAD
 						<a href="#sect1" class="chosen">Home</a>
 						<a href="#sect2">Portfolio</a>
 						<a href="#sect3">About Me</a>
 						<a href="#sect4">Contact</a>
+=======
+						<a class="slideshow selected" href="index.html" class="chosen">Home</a>
+						<a href="store.html">Store</a>
+						<a href="shoppingcart.html">Shopping Cart</a>
+						<a href="contact.html">Contact</a>
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 						
 					</div>
 				</div>
 			</nav>
+<<<<<<< HEAD
 			<div id="main">
 				<div class="inset">
 					
@@ -234,5 +276,77 @@
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/scripts.js"></script>
+=======
+
+<style type="text/css">
+#slideshow {
+				border:solid 10px #ab2e37;
+				width: 300px;
+				height: 180px;
+				position: relative;
+				margin:auto;
+				margin-left: -10px;
+			}
+#slideshow img {float: center;
+				display: inline-block;
+				left: 0px; top: 0px;
+				
+				position: absolute;
+				
+			
+			}
+</style>
+			<div id="theTarget" class="subpage">
+			<div id="slideshow" class="cf">
+	<article>
+			<img src="img/Poster1.png" height="180" width="300">
+			<img src="img/Poster2.png" height="180" width="300">
+			<img src="img/Poster3.png" height="180" width="300">
+			<img src="img/Poster4.png" height="180" width="300">
+			<img src="img/Poster5.png" height="180" width="300">
+	</article>
+		</div>
+
+	<div>
+		<aside>
+				<img src="">
+				</aside>
+				</div>
+
+
+			<div>
+				<footer id="closing" class="cf">
+			
+			<div class="copy">&copy; 2015. All rights reserved.</div>
+			</footer>
+		</div> 
+
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript">
+		$(document).ready(slideshow_apply);
+
+		function firstSlideshow(){
+		var slideshow = $('#slideshow');
+
+		function slideshow_fade() {
+			lastimg = slideshow.find('img:last');
+
+			lastimg.delay(2000).animate({'opacity':'1'},1000, function(){
+			lastimg.prependTo(slideshow).css({'opacity':'1'});
+			slideshow_fade();
+							});
+						}
+
+			slideshow_fade();
+					}
+			firstSlideshow();
+
+			});
+		
+
+		</script>
+		</div>
+>>>>>>> 2b70dc558bca27658d07ce8ed64c261f54e108a3
 	</body>
 </html>
