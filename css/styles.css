@@ -132,6 +132,6 @@ img { width: 100%; }
 /*-------------------------------------
 video
 -------------------------------------*/
-
-
-#sect5 video{margin-left: 200px; width: 50%;}
+#carousel-example-generic .item {width: 100%; }
+#main .inset{width:30%; margin-left: 25px;}
+#sect2 {margin-left: 50px; width: 95%;}
