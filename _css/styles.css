@@ -20,68 +20,103 @@
 | core
 -------------------------------------*/
 body { 
-	background-color: #000000; 
-	font-family: 'PT Sans', sans-serif;
+	 
+	font-family: 'PT Sans', sans-serif; text-align: center;
+	font-size: 12px;
+	color: #FF0000;
+
+
+
 }
 #container {
-	width: 100%;
-	max-width: 960px;
-    margin: auto;
-	background-color: #FFFFFF;
+	
+	width: 1000px;
+	height: 1000px;
+	padding: 25px;
+	border:solid 8px #000000;
+	margin:25px auto;
 }
  .inset {
-	;
+	
 	width: 90%;
 	min-width: 120px; 
 	max-width: 1000px;
 	max-height: 150px;
 	/*padding: 10px; */
 	margin: auto;
-	color: #333;
+	color: #FF0000;
 }
+body.subpage { background-color: #FF0000; 
+	width: 910px;
+	padding: 25px;
+	
+	margin:25px auto;
+	border:solid 10px #000000;
+	color: black;
+ }
+html{background-color: #FADAA3;}
 
-header{height:120px;}
-header img {height: 135px; max-width: 40%; float: left; margin-left: -5px;}
-header aside img {height: 135px;max-width: 30%; float: left;}
-h1 { font-weight: 900; margin-left: 15px; }
-h2, h3 { font-weight: 500; margin: 0px;  color: rgba(0,0,0,.5); }
+title{  margin-top: 5px; font-size: 12px; }
+
+header{ margin-top: -30px; margin-left: 15px; text-align: top;}
+header img {height: 135px; max-width: 100%; float: left; }
+header article img {height: 100px; width:auto;float: left; margin-left: -35px;}
+header aside img {height: 100px; width:auto; float: left;margin-left: -68px;}
+
+h1 { font-weight: 200; font-size: 14px; margin-left: 18px; margin-top: 2px; color: white; }
+h2, h3 { font-weight: 500;  text-align: center; color: white;margin-left:80px;float: left; }
+a { font-weight: 500; margin: 0px;  color: white; }
 h4{font-weight: 900; margin-left: 430px; }
-p { font-weight: 400; color: #FFFFFF; margin: 10px 0px 15px; }
-article img {float: left;}
+p { font-weight: 400; color: #FFFFFF; margin: 10px 0px 15px; float: left; text-align: ce }
+article img {float: left; margin-top: -25px; background-color: black;margin-left: 100px;}
+aside img {float: left; margin-top: -25px; }
+aside p{ float: left; text-align: center;}
 
-#sect2 img{max-width: 40%; float: left; margin-left: 40px; margin-top: 10px;
-			padding-left: 50px;}
-#sect3 {float: left;}
+
+
+
+
+#main .inset{width:100%; margin-left: 25px;}
+#main ul{background-color: black; color:#FF0000;}
 /*-------------------------------------
 | parents
 -------------------------------------*/
-header#masthead 	{ font-family: 'PT Sans', sans-serif;background-color: #FFFFFF; padding: 50px 20px; font-size: 12px; width: 50%; margin-top: -30px; margin-left: 300px;}
-nav#mainmenu 		{ font-family: 'PT Sans', sans-serif;background-color: #FFDAA5; padding: 20px; font-size: 10px;}
-#main 				{ font-family: 'PT Sans', sans-serif;width: 100%; background-color: #FFEEE0; padding: 20px; }
-footer#closing 		{ font-family: 'PT Sans', sans-serif;background-color: #D7D6D5; padding: 20px; font-size: 12px; }
+header#masthead 	{ font-family: 'PT Sans', sans-serif;color: #FF0000; padding: 50px 20px; font-size: 10px; width: 50%; margin-top: -50px; margin-left: 220px;}
+nav#mainmenu 		{ font-family: 'PT Sans', sans-serif;background-color: #FF0000; padding: 20px; font-size: 10px;}
+#main 				{ font-family: 'PT Sans', sans-serif;width: 100%; background-color: #000000; }
+footer#closing 		{ font-family: 'PT Sans', sans-serif;background-color: #000000; color:white;padding: 20px; font-size: 14px; width: 890px; margin-left: -25px; margin-bottom: -25px; text-align: left;}
 
 /*-------------------------------------
 | Nav
 -------------------------------------*/
-nav#mainmenu { text-align: center; font-family: 'PT Sans', sans-serif;}
-nav#mainmenu a { 
-	display: inline-block; 
+nav#mainmenu { text-align: center;
+				font-family: 'PT Sans', sans-serif;
+				color: #FFFFFF;
+				font-size: 10px;
+				background-color: #FF0000;
+ }
+#mainmenu a {
+	display: inline-block;
 	width: 150px;
-	line-height: 50px;
+	height: 40px; 
+	line-height: 30px; 
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: #A81010; 
-	color: #fff;
-	font-family: 'PT Sans', sans-serif;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	color: #000000;
+	border:solid 2px black;
 }
-nav#mainmenu a:hover { background-color: #130D04;  }
+nav#mainmenu a:hover { background-color: #6ABE86; color: #fff; text-decoration: none;font-family: 'PT Sans', sans-serif; }
+nav#mainmenu a.chosen { background-color: #73AD56;  color: #000; font-family: 'PT Sans', sans-serif;}
 
 
 /*-------------------------------------
 | content
 -------------------------------------*/
-#main article  	{ background-color: #FFF; padding: 20px; float: left; width: 65%;font-family: 'PT Sans', sans-serif; }
-#main aside  	{ background-color: #B07828; padding: 20px; float: left; width: 35%;font-family: 'PT Sans', sans-serif; }
+#main article  	{ background-color: #000000; padding: 20px;margin-left: 150px;margin-top: 15px; float: left; width: 65%;font-family: 'PT Sans', sans-serif; text-align: left; }
+#main aside  	{ background-color: #000000; padding: 20px; float: left; width: 35%;font-family: 'PT Sans', sans-serif; }
+
 
 /*-------------------------------------
 | form
@@ -113,12 +148,65 @@ form input, textarea, select {
 	padding: 5px;
 	border: #000000 3px solid;
 	width: 100%;
-	background-color: #FFFFFF
+	background-color: #FFFFFF;
 }
 
 /*-------------------------------------
 | Database Output
 -------------------------------------*/
+
+/*-------------------------
+| Slideshow
+--------------------------*/
+#slideshow {
+				border:solid 10px #000000;
+				width: 600px;
+				height: 400px;
+				position: relative;
+				margin:auto;
+				margin-left: 120px;
+				margin-bottom: 50px;
+			}
+			
+#slideshow img {
+				position: absolute;
+				left: 0px; top: 0px;
+			}
+
+
+/*-------------------------
+| Swap
+--------------------------*/
+#swap {
+	
+	padding: 25px;
+	text-align: center;
+	width: 600px;
+	margin: auto;
+	
+}
+#swap img.large { margin-bottom: 50px;border:solid 10px black;}
+#swap img.thumbs {float: left; margin-bottom: 30px;margin-left: -60px;margin-right: -60px;}
+#swap .thumbs img {
+	width: 80px;
+	height: auto;
+		-moz-border-radius:6px; 
+
+			-webkit-border-radius:6px; 
+
+			border-radius:6px;
+
+			border:1px solid #e0e0e0;
+
+			box-shadow: 0px 0px 7px #958365;
+
+			-webkit-box-shadow: 0px 0px 7px #e6e6e6;
+
+			-moz-box-shadow: 0px 0px 7px #e6e6e6;
+		
+}
+
+
 
 .output_list {
 	margin-left: auto;
@@ -144,4 +232,44 @@ footer#closing .copy {
 	float: left;
 	padding: 10px;
 }
-footer#closing .copy { text-align: right; }
+footer#closing .copy { text-align: left; color: white;  }
+/*-------------------------------------
+| Responsive
+-------------------------------------*/
+body{max-width: 100%}
+#main article {}
+
+@media screen and (min-width:300px){
+body{max-width: 100%}}
+#main article {max-width: 100%%;font-size: 10px; }
+#main aside {max-width: 100%%; font-size: 10px;  }
+#container {max-width: 100%;}
+#container img{ 
+		position:static;}
+
+
+
+
+@media screen and (min-width:960px){
+body{max-width: 100%}
+#main article {max-width: 100%;font-size: 12px; }
+#main aside {max-width: 100%; font-size: 12px; }
+#container {max-width: 100%;}
+#container img{
+		position:static;}
+
+
+@media screen and (min-width:1200px){
+body{max-width: 100%}
+#main article {max-width: 100%;font-size: 14px; }
+#main aside {max-width: 100%; font-size: 14px; }
+#container {max-width: 100%;}
+#container img{
+		position:static;}
+
+
+
+/*Clearfix Hack :: cf + tab*/
+.cf:before, .cf:after {content: " "; display: table;}
+.cf:after {clear: both;}
+.cf { *zoom:1;}
