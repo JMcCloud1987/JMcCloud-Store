@@ -6,10 +6,11 @@ require 'require/sharedVar.php';
 
 ?>
 <!doctype html>
+
 <html>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="_css/styles.css" 
+	<link rel="stylesheet" href="_css/styles.css">
 
 	<head>
 		<?php include "includes/head.php" ?>
@@ -55,12 +56,20 @@ require 'require/sharedVar.php';
 		<h1>New Arrivals</h1>
 
 		<div id="slideshow" class="cf:after">
-			<img src="img/MaynardChucks(pair).png" height="380" width="580">
-			<img src="img/Black(pair).png" height="380" width="580">
-			<img src="img/TwistyChucks(pair).png" height="380" width="580">
+			<img src="img/MaynardChucks(pair).png" height="180" width="360">
+			<img src="img/Black(pair).png" height="180" width="360">
+			<img src="img/TwistyChucks(pair).png" height="180" width="360">
 			<img src="">
 			<img src="">
 		</div>
+			<div id="slideshow" class="cf:after">
+			<img src="img/MaynardChucks(pair).png" height="180" width="360">
+			<img src="img/Black(pair).png" height="180" width="360">
+			<img src="img/TwistyChucks(pair).png" height="180" width="360">
+			<img src="">
+			<img src="">
+		</div>
+
 	
 
 		<script type="text/javascript" src="_js/jquery-1.11.0.js"></script>

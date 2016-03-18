@@ -78,6 +78,8 @@ aside p{ float: left; text-align: center;}
 
 #main .inset{width:100%; margin-left: 25px;}
 #main ul{background-color: black; color:#FF0000;}
+#main .cf:after{margin-bottom: 10px; margin-top: 75px;}
+
 /*-------------------------------------
 | parents
 -------------------------------------*/
@@ -160,12 +162,17 @@ form input, textarea, select {
 --------------------------*/
 #slideshow {
 				border:solid 10px #000000;
-				width: 600px;
-				height: 400px;
+				width: 380px;
+				height: 200px;
 				position: relative;
 				margin:auto;
-				margin-left: 120px;
-				margin-bottom: 50px;
+				margin-left: 50px;
+				margin-bottom: 100px;
+			}
+#slideshow .slideshow2 {
+				float: left;
+				margin-left: -100px;
+
 			}
 			
 #slideshow img {
