@@ -1,8 +1,8 @@
 <?php 
-require 'require/sharedVar.php';
-require 'require/functions.php';
-require 'require/connect.php';
-require 'require/error_reporting.php';
+require 'require/sharedVar.html';
+require 'require/functions.html';
+require 'require/connect.html';
+require 'require/error_reporting.html';
 
 if (isset($_POST['delete']) && trim($_POST['delete']) != '') {
 	if (isset($_POST['username']) && isset($_POST['password']) && trim($_POST['username']) != '' && trim($_POST['password']) != '') {
@@ -16,7 +16,7 @@ if (isset($_POST['delete']) && trim($_POST['delete']) != '') {
 		$userArray = $user->fetch_assoc();
 
 		if(count($userArray) <= 0) {
-			die("That username doesn't exist! Try making <i>$username</i> today! <a href='delete.php'>Back</a>");
+			die("That username doesn't exist! Try making <i>$username</i> today! <a href='delete.html'>Back</a>");
 		}
 		if ($userArray['Password'] != $password) {
 			die("<h2>Incorrect password! <a href='update.php'>Back</a></h2>");
@@ -28,7 +28,7 @@ if (isset($_POST['delete']) && trim($_POST['delete']) != '') {
 
 	    $logged = false;
 
-		echo "<h2>User has been deleted. <a href='index.php'>Home</a> </h2><br>";
+		echo "<h2>User has been deleted. <a href='index.html'>Home</a> </h2><br>";
 
 	    exit;
 	}
@@ -42,12 +42,12 @@ if (isset($_POST['delete']) && trim($_POST['delete']) != '') {
 <html>
 <link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
 	<head>
-		<?php include "includes/head.php" ?>
+		<?php include "includes/head.html" ?>
 	</head>
 	<body>
 		<div id="container">
-			<?php include "includes/header.php" ?>
-			<?php include "includes/nav.php" ?>
+			<?php include "includes/header.html" ?>
+			<?php include "includes/nav.html" ?>
 		<h1>Delete User</h1>
 		<form id="form_delete" method="post" action="">
 				<ul>
@@ -72,8 +72,8 @@ if (isset($_POST['delete']) && trim($_POST['delete']) != '') {
 		 </ul>
 		 </form>
 
-			<?php include 'includes/footer.php' ?>
+			<?php include 'includes/footer.html' ?>
 		</div>
-		<h2>Haven't Registered? Register<a href="register.php"> here</a></h4>
+		<h2>Haven't Registered? Register<a href="register.html"> here</a></h4>
 	</body>
 </html>
