@@ -20,7 +20,6 @@
 | core
 -------------------------------------*/
 body { 
-<<<<<<< HEAD
 	 
 	font-family: 'PT Sans', sans-serif; text-align: center;
 	font-size: 12px;
@@ -38,8 +37,6 @@ body {
 	margin:25px auto;
 }
  .inset {
-	
-=======
 	background-color: #000000; 
 	font-family: 'PT Sans', sans-serif;
 }
@@ -50,15 +47,14 @@ body {
 	background-color: #FFFFFF;
 }
  .inset {
-	;
->>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
+
 	width: 90%;
 	min-width: 120px; 
 	max-width: 1000px;
 	max-height: 150px;
 	/*padding: 10px; */
 	margin: auto;
-<<<<<<< HEAD
+
 	color: #FF0000;
 }
 body.subpage { background-color: #FF0000; 
@@ -71,9 +67,9 @@ body.subpage { background-color: #FF0000;
  }
 html{background-color: #FADAA3;}
 
-title{  margin-top: 5px; font-size: 12px; }
+title{ margin-top: -50px; margin-left: 15px; text-align: top; }
 
-header{ margin-top: -30px; margin-left: 15px; text-align: top;}
+header{ margin-top: 10px; margin-left: 15px; text-align: top;}
 header img {height: 135px; max-width: 100%; float: left; }
 header article img {height: 100px; width:auto;float: left; margin-left: -35px;}
 header aside img {height: 100px; width:auto; float: left;margin-left: -68px;}
@@ -84,8 +80,8 @@ a { font-weight: 500; margin: 0px;  color: white; }
 h4{font-weight: 900; margin-left: 430px; }
 p { font-weight: 400; color: #FFFFFF; margin: 10px 0px 15px; float: left; text-align: ce }
 article img {float: left; margin-top: -25px; background-color: black;margin-left: 100px;}
-aside img {float: left; margin-top: -25px; }
-aside p{ float: left; text-align: center;}
+body aside img {float: left; margin-top: -25px; }
+body aside p{ float: left; text-align: center;}
 
 
 
@@ -98,13 +94,15 @@ aside p{ float: left; text-align: center;}
 /*-------------------------------------
 | parents
 -------------------------------------*/
-header#masthead 	{ font-family: 'PT Sans', sans-serif;color: #FF0000; padding: 50px 20px; font-size: 10px; width: 50%; margin-top: -50px; margin-left: 220px;}
-nav#mainmenu 		{ font-family: 'PT Sans', sans-serif;background-color: #FF0000; padding: 20px; font-size: 10px;}
-#main 				{ font-family: 'PT Sans', sans-serif;width: 100%; background-color: #000000; }
-footer#closing 		{ font-family: 'PT Sans', sans-serif;background-color: #000000; color:white;padding: 20px; font-size: 14px; width: 890px; margin-left: -25px; margin-bottom: -25px; text-align: left;}
-=======
-	color: #333;
-}
+
+/*-------------------------------------
+| parents
+-------------------------------------*/
+header#masthead 	{ font-family: 'PT Sans', sans-serif;background-color: #FFFFFF; padding: 50px 20px; font-size: 12px; width: 50%; height: auto;  margin-left: 300px;}
+nav#mainmenu 		{ font-family: 'PT Sans', sans-serif;background-color: #FFDAA5; padding: 20px; font-size: 10px;}
+#main 				{ font-family: 'PT Sans', sans-serif;width: 100%; background-color: #FFEEE0; padding: 20px; }
+footer#closing 		{ font-family: 'PT Sans', sans-serif;background-color: #000000; color:white;padding: 20px; font-size: 14px; width: 890px; margin-left: -25px; margin-bottom: -145px; text-align: left; }
+
 
 header{height:120px;}
 header img {height: 135px; max-width: 40%; float: left; margin-left: -5px;}
@@ -113,24 +111,17 @@ h1 { font-weight: 900; margin-left: 15px; }
 h2, h3 { font-weight: 500; margin: 0px;  color: rgba(0,0,0,.5); }
 h4{font-weight: 900; margin-left: 430px; }
 p { font-weight: 400; color: #FFFFFF; margin: 10px 0px 15px; }
-article img {float: left;}
+article img {float: left; margin-top: -25px; background-color: black;margin-left: 100px;}
+aside img {float: left; margin-top: -25px; }
+aside p{ float: left; text-align: center;}
 
-#sect2 img{max-width: 40%; float: left; margin-left: 40px; margin-top: 10px;
-			padding-left: 50px;}
-#sect3 {float: left;}
-/*-------------------------------------
-| parents
--------------------------------------*/
-header#masthead 	{ font-family: 'PT Sans', sans-serif;background-color: #FFFFFF; padding: 50px 20px; font-size: 12px; width: 50%; margin-top: -30px; margin-left: 300px;}
-nav#mainmenu 		{ font-family: 'PT Sans', sans-serif;background-color: #FFDAA5; padding: 20px; font-size: 10px;}
-#main 				{ font-family: 'PT Sans', sans-serif;width: 100%; background-color: #FFEEE0; padding: 20px; }
-footer#closing 		{ font-family: 'PT Sans', sans-serif;background-color: #D7D6D5; padding: 20px; font-size: 12px; }
->>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
+
+
 
 /*-------------------------------------
 | Nav
 -------------------------------------*/
-<<<<<<< HEAD
+
 nav#mainmenu { text-align: center;
 				font-family: 'PT Sans', sans-serif;
 				color: #FFFFFF;
@@ -151,7 +142,7 @@ nav#mainmenu { text-align: center;
 }
 nav#mainmenu a:hover { background-color: #6ABE86; color: #fff; text-decoration: none;font-family: 'PT Sans', sans-serif; }
 nav#mainmenu a.chosen { background-color: #73AD56;  color: #000; font-family: 'PT Sans', sans-serif;}
-=======
+
 nav#mainmenu { text-align: center; font-family: 'PT Sans', sans-serif;}
 nav#mainmenu a { 
 	display: inline-block; 
@@ -164,63 +155,22 @@ nav#mainmenu a {
 	font-family: 'PT Sans', sans-serif;
 }
 nav#mainmenu a:hover { background-color: #130D04;  }
->>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
+
 
 
 /*-------------------------------------
 | content
 -------------------------------------*/
-<<<<<<< HEAD
+
 #main article  	{ background-color: #000000; padding: 20px;margin-left: 150px;margin-top: 15px; float: left; width: 65%;font-family: 'PT Sans', sans-serif; text-align: left; }
 #main aside  	{ background-color: #000000; padding: 20px; float: left; width: 35%;font-family: 'PT Sans', sans-serif; }
 
-=======
+
 #main article  	{ background-color: #FFF; padding: 20px; float: left; width: 65%;font-family: 'PT Sans', sans-serif; }
 #main aside  	{ background-color: #B07828; padding: 20px; float: left; width: 35%;font-family: 'PT Sans', sans-serif; }
->>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
 
-/*-------------------------------------
-| form
--------------------------------------*/
 
-form {
-	width: 50%;
-	margin-left: 230px;
-}
 
-form ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-form ul li {
-	margin: 15px 0;
-}
-
-form label {
-	font-family: 'PT Sans', sans-serif;
-	display: block;
-	font-size: 10px;
-}
-
-form input, textarea, select {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 12px;
-	padding: 5px;
-	border: #000000 3px solid;
-	width: 100%;
-<<<<<<< HEAD
-	background-color: #FFFFFF;
-=======
-	background-color: #FFFFFF
->>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
-}
-
-/*-------------------------------------
-| Database Output
--------------------------------------*/
-
-<<<<<<< HEAD
 /*-------------------------
 | Slideshow
 --------------------------*/
@@ -273,23 +223,6 @@ form input, textarea, select {
 }
 
 
-
-=======
->>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
-.output_list {
-	margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
-    background-color: #ABA7A7;
-    padding: 1em;
-    font-size: 1.1em;
-}
-
-.image_db {
-	max-width: 100%;
-}
-
 /*-------------------------------------
 | closing
 -------------------------------------*/
@@ -300,8 +233,8 @@ footer#closing .copy {
 	float: left;
 	padding: 10px;
 }
-<<<<<<< HEAD
-footer#closing .copy { text-align: left; color: white;  }
+
+
 /*-------------------------------------
 | Responsive
 -------------------------------------*/
@@ -342,6 +275,6 @@ body{max-width: 100%}
 .cf:before, .cf:after {content: " "; display: table;}
 .cf:after {clear: both;}
 .cf { *zoom:1;}
-=======
+
 footer#closing .copy { text-align: right; }
->>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
+
