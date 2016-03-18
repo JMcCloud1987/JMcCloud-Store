@@ -56,16 +56,9 @@ require 'require/sharedVar.php';
 		<h1>New Arrivals</h1>
 
 		<div id="slideshow" class="cf:after">
-			<img src="img/MaynardChucks(pair).png" height="180" width="360">
-			<img src="img/Black(pair).png" height="180" width="360">
-			<img src="img/TwistyChucks(pair).png" height="180" width="360">
-			<img src="">
-			<img src="">
-		</div>
-			<div id="slideshow" class="cf:after">
-			<img src="img/MaynardChucks(pair).png" height="180" width="360">
-			<img src="img/Black(pair).png" height="180" width="360">
-			<img src="img/TwistyChucks(pair).png" height="180" width="360">
+			<img src="img/MaynardChucks(pair).png" height="380" width="580">
+			<img src="img/Black(pair).png" height="380" width="580">
+			<img src="img/TwistyChucks(pair).png" height="380" width="580">
 			<img src="">
 			<img src="">
 		</div>

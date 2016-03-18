@@ -162,17 +162,12 @@ form input, textarea, select {
 --------------------------*/
 #slideshow {
 				border:solid 10px #000000;
-				width: 380px;
-				height: 200px;
+				width: 600px;
+				height: 400px;
 				position: relative;
 				margin:auto;
-				margin-left: 50px;
+				margin-left: 120px;
 				margin-bottom: 100px;
-			}
-#slideshow .slideshow2 {
-				float: left;
-				margin-left: -100px;
-
 			}
 			
 #slideshow img {
