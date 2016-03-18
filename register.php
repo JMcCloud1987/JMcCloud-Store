@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php 
+=======
+<?php 
+>>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
 require_once 'require/sharedVar.php';
 require_once 'require/functions.php';
 require_once 'require/connect.php';
@@ -46,6 +50,7 @@ if (isset($_POST['register']) && trim($_POST['register']) != '') {
 ?>
 <!doctype html>
 <html>
+<<<<<<< HEAD
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="_css/styles.css" >
@@ -91,6 +96,17 @@ if (isset($_POST['register']) && trim($_POST['register']) != '') {
 
 			<h1>Register</h1>
 			<div id="main" class="cf:after">
+=======
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+	<head>
+		<?php include "includes/head.php" ?>
+	</head>
+	<body>
+		<div id="container">
+			<?php include "includes/header.php" ?>
+			<?php include "includes/nav.php" ?>
+			<h4>Register</h4>
+>>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
 			<form method="post" action="">
 				<ul>
 					<li>

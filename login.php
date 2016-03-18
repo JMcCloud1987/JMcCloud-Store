@@ -39,6 +39,7 @@ if (isset($_POST['login']) && trim($_POST['login']) != '') {
 ?>
 <!doctype html>
 <html>
+<<<<<<< HEAD
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="_css/styles.css" >
@@ -85,6 +86,17 @@ if (isset($_POST['login']) && trim($_POST['login']) != '') {
 </div>
 <body class="subpage">
 			
+=======
+<link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+	<head>
+		<?php include "includes/head.php" ?>
+	</head>
+	<body>
+		<div id="container">
+			<?php include "includes/header.php" ?>
+			<?php include "includes/nav.php" ?>
+
+>>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
 			<form method="post" action="">
 				<ul>
 					<li>

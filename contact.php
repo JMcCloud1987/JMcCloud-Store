@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 require 'require/sharedVar.php';
 require 'require/functions.php';
@@ -102,6 +103,54 @@ if (isset($_POST['login']) && trim($_POST['login']) != '') {
 
 					</section>
 		
+=======
+<?php
+$to = "omarpatel123@gmail.com";
+$subject = "Portfolio Contact";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$topic = $_POST['topic'];
+$message = $_POST['message'];
+$body = <<<EMAIL
+Hi! My name is $name and my topic is $topic
+$message
+Sincerely,
+$name
+P.S. Oh yeah, my email is $email.
+EMAIL;
+
+
+$header = "From: $email";
+if ($_POST) {
+ if ($name == '' || $email == '' || $message == '')
+ {
+ $feedback = 'Fill out all the fields';
+ } else {
+ mail($to, $subject, $body, $header);
+ $feedback = 'Hey, this is actually working!';
+ }
+}
+?>
+
+
+
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Contact
+			:: JMcCloud Art & Design
+			:: Art Has No Limit's
+		</title>
+		<link rel="stylesheet" href="_css/styles.css">
+	</head>
+		<body>
+		<div id="container">
+		<p id="feedback"><?php echo $feedback; ?></p>
+			<?php include "includes/header.php" ?>
+			<link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+		<?php include "includes/nav.php" ?>
+>>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
 			<div id="main" class="cf">
 				<form method="post" action="?">
 					<ul>
@@ -115,9 +164,15 @@ if (isset($_POST['login']) && trim($_POST['login']) != '') {
 						<li>
 							<label for="topic">Topic</label>
 							<select id="topic" name="topic">
+<<<<<<< HEAD
 								<option value="Feedback">Feedback</option>
 								<option value="Purchase">Purchase</option>
 								<option value="Questions">Questions</option>
+=======
+								<option value="Tacos">Tacos</option>
+								<option value="Bananas">Bananas</option>
+								<option value="Whatever">Whatever</option>
+>>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
 							</select>
 						</li>
 						<li>
@@ -130,9 +185,29 @@ if (isset($_POST['login']) && trim($_POST['login']) != '') {
 					</ul>
 				</form>
 			</div>
+<<<<<<< HEAD
 
 			<?php include 'includes/footer.php' ?>
 		</div>
 	</body>
 
+=======
+			<footer id="closing" class="cf">
+				<div class="contact">
+					<div class="address">
+						Los Angeles Modern Auctions (LAMA)
+						16145 Hart St. Van Nuys, CA 91406
+					</div>
+					<div class="phone">p. 323.904.1950</div>
+					<div class="fax">f. 323.904.1954</div>
+					<div class="email"><a href="mailto:lama@lamodern.com">lama@lamodern.com</a></div>
+				</div>
+				<div class="copy">
+					All website design, text, and images are Copyright 2015 by Modern Auctions, Inc. ALL RIGHTS RESERVED.
+					Any use of materials on this website, including reproduction, modification, distribution or republication, without the prior written consent of MAI, is strictly prohibited.
+				</div>
+			</footer>
+		</div>
+	</body>
+>>>>>>> 0ca2423ff9ff32cfb0aaddad15344d9d3eb033a6
 </html>
